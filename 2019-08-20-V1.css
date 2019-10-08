@@ -1,0 +1,425 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.contaner{
+    width: 80%;
+    margin: auto;
+}
+.clear{
+    clear: both;
+}
+h2{
+    margin: 0;
+}
+
+/* ------------------------------------ */
+/* nav */
+.navbar{
+    float: left;
+    width: 100%;
+    height: 100px;
+    
+}
+.nav_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navLogo{
+    width: 200px;
+    height: 60px;
+    background-image: url('img/logo.png');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+/* 手機板選單 */
+.navToggle{
+    display: none;
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid white;
+
+}
+
+.barsLine{
+    width: 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.navLink_ph{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0px;   
+    width: 100%;
+    padding: 0;
+}
+
+.navLink_ph.active{  /*為了JS設立，切換漢堡條*/
+    display: block;
+    margin: 0;
+}
+/* -- */
+
+
+.navLink{
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nl_link{
+    width: 100px;
+    height: 60px;
+    background-color: rgba(70, 11, 11, 0.295);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navLink a,
+.navLink_ph a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+
+    width: 100%;
+    height: 90vh;
+    background-color: aqua;
+    background-image: url('img/20170310192456-75a9d4e878eb219459765fa6b59769fd-tablet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ------------------------------------ */
+/* main 01 */
+.main01{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 0;
+    
+}
+.m01_flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.m01_pic{
+    float: left;
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    background-image: url('img/ef4434bfd51ed8de8cff2091883d9b0b.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.m01_img{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(121, 98, 67);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* main02 */
+.main02{
+    width: 100%;
+}
+
+.m02_pic{
+    float: left;
+    position: absolute;
+    z-index: -9999;
+    width: 100%;
+    height: 100%;  /* 小於300會爆版，不知道為甚麼呢 */
+    background-color: rgb(59, 97, 97);
+    background-image: url('img/dc7f660943ce079258c2c3a6d83f194f.jpg');
+    background-size: cover;
+    filter:brightness(.5) blur(2px);  /* 上面會有神秘白線，也不知道為甚麼呢(傷腦筋) */
+}
+
+.m02_float{
+    padding: 50px 0;
+}
+
+.m02_title{
+    text-align: center;
+    color: white;
+}
+.m02_title h2{
+    margin: 0;
+}
+
+.m02_img{
+    width: 100%;
+    background-color: rgba(102, 75, 43, 0.473);
+    border-bottom: 1px solid black;
+    padding: 15px;
+    color: white;
+}
+/* 不知道為甚麼是第五個 */
+.m02_img:nth-child(5){
+    border-bottom: none;    
+}
+
+.m02_i_icon{
+    float: left;
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    margin-right: 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/* main03 */
+.main03{
+    width: 100%;
+    height: 180px;
+    background-color: beige;
+    background-image: url('img/20170202162651_35.jpg');
+    background-size: cover;
+    background-position-y: 70%;
+    
+
+}
+
+/* main05 */
+.main05{
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   padding: 50px;
+}
+
+.m05_img{
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+.light{
+    width: 1px;
+    height: 20px;
+    border: 1px solid rgb(155, 108, 108);
+    margin: 0 50%;
+    
+}
+.m05_map{
+    width: 100%;
+    height: 200px;
+    
+}
+
+
+/* ------------------------------------ */
+/* footer */
+.ft_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    background-image: url('img/d7cec48460f529ebf47e9d751e30863a.jpg');
+    background-size: cover;
+    padding: 50px;  
+}
+.ftLogo{
+    width: 300px;
+    height: 90px;
+    background-image: url('img/logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.ftLink{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.ftLink a{
+    text-decoration: none;
+    color: white;
+}
+.ftl_link{
+    width: 100px;
+    height: 60px;
+    margin: 11px 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+.ftl_link p{  
+    border-right: 1px solid white;
+
+}
+.ftl_link:nth-child(3) p{
+    border-right: 0;
+}
+
+
+/* ------------------------------------ */
+/* top */
+.top{
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 10px;
+    line-height: 80px;
+    text-align: center;
+}
+
+@media screen and (max-width:800px){
+    /* nav */
+    .navLogo{
+        margin-left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    .navLink{
+        display: none;
+    }
+    
+    .navToggle{
+        display: block;
+    }
+    
+    .navLink_ph h3{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-color: rgba(70, 11, 11, 0.295);
+    }
+    
+    .nl_link{
+        width: 100%;
+        margin: 0;
+    }
+
+    .nl_link h3{
+        line-height: calc((90vh - 100px)/4);
+    }
+
+
+    /* main01 */
+    .main01{
+        height: auto;
+    }
+    .m01_flex{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .m01_pic{
+        width: 100%;
+        height: 50vh;
+    }
+    .m01_img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* main03 */
+    .main03{
+        height: 15vh;
+    }
+
+
+    /* footer */
+    .footer{
+        height: auto;
+    }
+
+    .ftLink{
+        height: auto;
+        flex-direction: column;
+        align-items: center;       
+    }
+
+    .ftl_link{
+        height: 60px;
+        margin: 0;
+        border-bottom: 1px solid white;
+    }
+
+    .ftl_link p{  
+        border-right:none;
+        line-height: 35px;
+    }
+
+    .ftl_link:nth-child(3){
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    
+    .navLogo{
+        width: 100%;
+        height: 10vw;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    /* nav */
+    .navToggle{
+        float: right;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border: 1px solid white;
+    
+    }
+    
+    .barsLine{
+        width: 18px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid white;
+    }
+
+    
+    /* main02 */
+    .m02_pic{
+        height: 210vw;
+    }
+}
