@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+nav.navbar {
+  padding: 0px;
+}
+
+nav.navbar .container .navbar-brand {
+  width: 160px;
+  height: 107.3px;
+  margin: 10px 20px;
+  background-image: url("../img/LOGO.png");
+  background-position: center;
+  background-size: cover;
+}
+
+nav.navbar .container .navbar-brand.active {
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  width: 82px;
+  height: 55px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 52px 1.5em;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  padding: 25px 1em;
+}
+
+section.banner {
+  margin-top: 107.3px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+section.about {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.about .about_text {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.about .about_text h1,
+section.about .about_text h2,
+section.about .about_text p {
+  margin: 0;
+  padding: 0;
+}
+
+section.about .about_text h1 {
+  padding: 25px 0;
+}
+
+section.about .about_text h2 {
+  font-size: 24px;
+}
+
+section.about .about_img img {
+  width: 100%;
+}
+/*# sourceMappingURL=onepage_sw_aos.css.map */

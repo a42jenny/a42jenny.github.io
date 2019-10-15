@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+
+// --------------------------------
+// nav
+
+nav.navbar {
+    padding: 0px;
+
+    .container {
+
+        // @media screen and (max-width:1000px;){}
+
+        .navbar-brand {
+            width: 160px;
+            height: 107.3px;
+            margin: 10px 20px;
+            // background-color: aqua;
+            background-image: url("../img/LOGO.png");
+            background-position: center;
+            background-size: cover;
+
+            &.active {
+                transition-duration: 0.35s;
+                width: 82px;
+                height: 55px;
+
+            }
+        }
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 52px 1.5em;
+
+    &.active {
+        padding: 25px 1em;
+    }
+}
+
+// --------------------------------
+// banner
+
+section.banner {
+    margin-top: 107.3px;
+
+    img {
+        width: 100%;
+
+    }
+}
+
+// --------------------------------
+// about
+
+section.about {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    .about_text {
+        align-content: center;
+
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            padding: 25px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+    }
+
+    .about_img {
+
+        img {
+            width: 100%;
+        }
+    }
+}
