@@ -16,7 +16,9 @@
 
     <!-- Aos.js CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    
+    <!-- Animate.js CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="styles/onepage_sw_aos.css">
@@ -71,7 +73,7 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-xl-6 col-lg-6 col-md-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="about_text">
                         <h1>
                             Tlakdjfmke
@@ -88,10 +90,36 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-6 col-xl-6 col-lg-6 col-md-6">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="about_img" data-aos="fade-left">
                         <img src="https://mmbiz.qpic.cn/mmbiz_jpg/08H76WAnZc3RUK9iamrnicGTZ0ngCVZ4ZIubBoMGqf5ibAkkwYGTEhZO3vSiaC3LfjKuhVcZTeadXHDcgpYmIrVhUA/640?wx_fmt=jpeg"
                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 col-lg-7 col-xl-7">
+                    <div class="info_colorBox"></div>
+                    <div class="info_title animated delay-2s">
+                        <h1>
+                            SACLE</br>LINES
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="info_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias repellendus, saepe quae
+                            quam.
+                        </p></br>
+                        <p>Lorem Soluta alias repellendus, saepe quae fugit dicta odit consectetur quam aperiam nemo.
+                        </p></br>
+                        <p>Lorem ipsum dolor sit amet. Soluta alias repellendus, saepe quae
+                            fugit dicta odit consectetur quam aperiam nemo.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -124,9 +152,9 @@
 <script class="mine">
     $(document).ready(function () {
         $(window).on("scroll", function () {
+                console.log($(this).scrollTop());
 
             if ($(this).scrollTop() > 50) {
-                // console.log($(this).scrollTop());
 
                 $('.navbar-brand').addClass('active')
                 $('.nav-link').addClass('active')
@@ -134,6 +162,15 @@
             } else {
                 $('.navbar-brand').removeClass('active')
                 $('.nav-link').removeClass('active')
+                $('.info_title').removeClass('fadeIn')
+
+            }
+            if($(this).scrollTop() > 700){
+                // console.log(524);
+                $('.info_title').addClass('fadeIn')
+
+            } else {
+                $('.info_title').removeClass('fadeIn')
 
             }
 

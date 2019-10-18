@@ -14,13 +14,10 @@ nav.navbar {
 
     .container {
 
-        // @media screen and (max-width:1000px;){}
-
         .navbar-brand {
             width: 160px;
             height: 107.3px;
             margin: 10px 20px;
-            // background-color: aqua;
             background-image: url("../img/LOGO.png");
             background-position: center;
             background-size: cover;
@@ -43,6 +40,7 @@ nav.navbar {
     }
 }
 
+
 // --------------------------------
 // banner
 
@@ -55,38 +53,113 @@ section.banner {
     }
 }
 
+
 // --------------------------------
 // about
 
 section.about {
-    margin-top: 50px;
+    margin-top: 50px; //區塊邊界
     display: flex;
     flex-direction: column;
 
-    .about_text {
-        align-content: center;
+    .row {
+        align-items: center;
 
-        h1,
-        h2,
-        p {
-            margin: 0;
-            padding: 0;
+        .about_text {
+            padding: 0 20px;
+
+            h1,
+            h2,
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                padding: 25px 0;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width:991px) {
+                margin-bottom: 60px;
+                text-align: center;
+
+            }
+
         }
 
-        h1 {
-            padding: 25px 0;
-        }
+        .about_img {
 
-        h2 {
-            font-size: 24px;
+            img {
+                width: 100%;
+            }
         }
-
     }
+}
 
-    .about_img {
 
-        img {
-            width: 100%;
+// --------------------------------
+// information
+
+section.information {
+    margin-top: 100px;
+
+    // .container .row>div {
+    //     padding: 0;
+    // }
+
+    .row {
+        position: relative;
+        align-items: center;
+
+        .info_title {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 180px;
+            padding: 10px 24px;
+            border: 1.5px solid rgba(0, 0, 0, 0.6);
+            color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .info_colorBox {
+            flex-shrink: 5;
+            width: 40vw;
+            height: 40vw;
+            max-width: 500px;
+            max-height: 500px;
+            min-width: 300px;
+            min-height: 400px;
+            margin-left:69px;
+            background-color: aqua;
+            background: repeating-linear-gradient(45deg, #34b3a8f5 0, #34b3a8f5 20%, #fff 0, #fff 50%);
+            background-size: 100px 100px;
+
+            @media screen and (max-width:991px) {
+                width: 32vw;
+                height: 32vw;
+            }
+
+            @media screen and (max-width:768px) {
+                min-width: 100%;
+                min-height: 300px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .info_text {
+            padding: 0 69px 0 0;
+
+            @media screen and (max-width:991px) {
+                padding: 0 20px;
+            }
+
+            @media screen and (max-width:768px) {
+                padding: 0;
+            }
         }
     }
 }

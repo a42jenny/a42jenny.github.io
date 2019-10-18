@@ -54,27 +54,107 @@ section.about {
           flex-direction: column;
 }
 
-section.about .about_text {
-  -ms-flex-line-pack: center;
-      align-content: center;
+section.about .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section.about .about_text h1,
-section.about .about_text h2,
-section.about .about_text p {
+section.about .row .about_text {
+  padding: 0 20px;
+}
+
+section.about .row .about_text h1,
+section.about .row .about_text h2,
+section.about .row .about_text p {
   margin: 0;
   padding: 0;
 }
 
-section.about .about_text h1 {
+section.about .row .about_text h1 {
   padding: 25px 0;
 }
 
-section.about .about_text h2 {
+section.about .row .about_text h2 {
   font-size: 24px;
 }
 
-section.about .about_img img {
+@media screen and (max-width: 991px) {
+  section.about .row .about_text {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+section.about .row .about_img img {
   width: 100%;
+}
+
+section.information {
+  margin-top: 100px;
+}
+
+section.information .row {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.information .row .info_title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 180px;
+  padding: 10px 24px;
+  border: 1.5px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+section.information .row .info_colorBox {
+  -ms-flex-negative: 5;
+      flex-shrink: 5;
+  width: 40vw;
+  height: 40vw;
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 300px;
+  min-height: 400px;
+  margin-left: 69px;
+  background-color: aqua;
+  background: repeating-linear-gradient(45deg, #34b3a8f5 0, #34b3a8f5 20%, #fff 0, #fff 50%);
+  background-size: 100px 100px;
+}
+
+@media screen and (max-width: 991px) {
+  section.information .row .info_colorBox {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.information .row .info_colorBox {
+    min-width: 100%;
+    min-height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+section.information .row .info_text {
+  padding: 0 69px 0 0;
+}
+
+@media screen and (max-width: 991px) {
+  section.information .row .info_text {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.information .row .info_text {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=onepage_sw_aos.css.map */
